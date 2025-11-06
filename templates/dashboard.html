@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Panel de Usuario{% endblock %}
+
+{% block content %}
+<section class="dashboard">
+  <h1>Bienvenido, <span class="username">Sebastián</span></h1>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Proyectos Activos</h2>
+      <p>3 proyectos en curso</p>
+      <button>Ver detalles</button>
+    </div>
+    <div class="card">
+      <h2>Propuestas Enviadas</h2>
+      <p>5 propuestas esta semana</p>
+      <button>Revisar</button>
+    </div>
+    <div class="card">
+      <h2>Clientes</h2>
+      <p>12 clientes registrados</p>
+      <button>Contactar</button>
+    </div>
+  </div>
+
+  <div class="project-list">
+    <h2>📋 Últimos Proyectos</h2>
+    <div class="project-item">
+      <h3>Diseño Web E-commerce</h3>
+      <p>Cliente: <b>Ana López</b></p>
+      <span class="status success">En progreso</span>
+    </div>
+    <div class="project-item">
+      <h3>API de Reservas</h3>
+      <p>Cliente: <b>Carlos Gómez</b></p>
+      <span class="status pending">Pendiente</span>
+    </div>
+  </div>
+</section>
+{% endblock %}

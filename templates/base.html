@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Freelance Hub{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <!-- 🧭 NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">💼 FreelanceHub</div>
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Freelancers</a></li>
+      <li><a href="#">Clientes</a></li>
+      <li><a href="#">Perfil</a></li>
+    </ul>
+  </nav>
+
+  <!-- 📦 CONTENIDO PRINCIPAL -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <!-- ⚙️ JS -->
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
